@@ -1,0 +1,96 @@
+/* basic config */
+
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #1a1a1a;
+    color : white;
+}
+
+/* navigational bs!1!!!1!1 */
+
+.site-header {
+    position : absolute;
+    top : 0;
+    left : 0;
+    width : 100%;
+    padding : 24px 50px;
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+    z-index : 10;
+}
+
+.site-header h1{
+    font-size : 28px;
+    letter-spacing : 3px;
+}
+
+.site-header nav{
+    display: flex;
+    gap: 30px;
+}
+
+.site-header a{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* maybe we should adjust this later */
+.site-header a:hover {
+    color: coral;
+}
+
+/* main character shinnanegans */
+
+.maincharacterguy{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.45)
+            rgba(0,0,0,0.65)
+        ),
+    /* url("/background.jpg") we dont have a background yet and im pretty sure thats lyras job*/
+    /* also put it in public/background.jpg or adjust the file name accordingly */
+    background-size: cover;
+    background-position: center;
+}
+
+.maincharactercontent h2{
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.maincharactercontent p{
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+/* actual button thingyy ma bobbi */
+
+.maincharactercontent button {
+    padding: 16px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    /* idk what the background of the button should be lmao */
+    background: gray;
+    color:white;
+
+    transition: transform 0.2s ease;
+}
+
+.maincharactercontent button:hover {
+    transform: scale(1.05);
+}
