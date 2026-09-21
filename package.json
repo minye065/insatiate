@@ -16,10 +16,12 @@
   },
   "homepage": "https://github.com/minye065/insatiate#readme",
   "dependencies": {
+    "better-sqlite3": "^13.0.3",
     "react": "^19.3.0",
     "react-dom": "^19.3.0"
   },
   "devDependencies": {
+    "@types/better-sqlite3": "^9.6.0",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.1.1",
